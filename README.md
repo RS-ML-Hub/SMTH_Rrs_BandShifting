@@ -81,6 +81,6 @@ sensor_wavelengths = {
 python SMTH_Rrs_BandShift.py
 ```
 
-3. The output file name will include the Out_Snsr_n. For instance, if the (Out_Snsr_n = "OLCI"), the output file will be (Result_HICOMatchup_Resample**OLCI**.csv)
+3. The output file name will include the Out_Snsr_n. For instance, if the (Out_Snsr_n = "**OLCI**"), the output file will be (Result_HICOMatchup_Resample**OLCI**.csv)
 
 For inquiries, please contact: eng.salemsalem@gmail.com  or salem.ibrahim@kuas.ac.jp
