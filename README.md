@@ -20,7 +20,7 @@ In addition to the Rrs data, the dataset includes 9 ancillary products:
 - '**longitude**': Geographical longitude
 - '**latitude**': Geographical latitude
 
-  ## Clone the repository
+## Clone the repository
 ```
 git clone https://github.com/RS-ML-Hub/SMTH_Rrs_BandShifting.git
 ```
@@ -45,7 +45,8 @@ The script will store HICO Dataset as Dataframe
 - **Inp_data_fn**: Edit the file name that include input data for band-shifting.
 - **Inp_Snsr_n**: Edit the name of input sensor (e.g., "AERNT").
 - **Out_Snsr_n**: Edit the name of output sensor (e.g., "OLCI").
-- **Note**: The details of sensors names and sensors wavelengths are included in sensor_labels and sensor_wavelengths, respectively
+
+**Note**: The details of sensors names and sensors wavelengths are included in sensor_labels and sensor_wavelengths, respectively
 ```
 sensor_labels = {
 	'AERNT'    :'AERONET-OC',
