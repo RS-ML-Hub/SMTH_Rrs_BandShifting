@@ -46,7 +46,7 @@ The script will store HICO Dataset as Dataframe
 - **Inp_Snsr_n**: Edit the name of input sensor (e.g., "AERNT").
 - **Out_Snsr_n**: Edit the name of output sensor (e.g., "OLCI").
 
-**Note**: The details of sensors names and sensors wavelengths are included in sensor_labels and sensor_wavelengths, respectively
+**Note**: The details of sensors names and sensors wavelengths are included in sensor_labels and sensor_wavelengths, respectively.
 ```
 sensor_labels = {
 	'AERNT'    :'AERONET-OC',
@@ -81,6 +81,6 @@ sensor_wavelengths = {
 python SMTH_Rrs_BandShift.py
 ```
 
-3. The output file name will include the Out_Snsr_n. For instance, if the (Out_Snsr_n = "OLCI"), the output file will be (Result_HICOMatchup_Resample**OLCI**.cs
+3. The output file name will include the Out_Snsr_n. For instance, if the (Out_Snsr_n = "OLCI"), the output file will be (Result_HICOMatchup_Resample**OLCI**.csv)
 
 For inquiries, please contact: eng.salemsalem@gmail.com  or salem.ibrahim@kuas.ac.jp
