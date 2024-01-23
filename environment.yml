@@ -1,0 +1,9 @@
+name: SMTH_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10  # You can change this to your desired Python version
+  - pandas
+  - numpy
+  - netCDF4
