@@ -10,15 +10,15 @@ The HICO images were processed to filter out invalid or negative Rrs values acro
 
 In addition to the Rrs data, the dataset includes 9 ancillary products:
 
-'**aot_868**': Aerosol optical thickness at 868 nm
-'**angstrom**': Aerosol Angstrom exponent (443 to 865 nm)
-'**chlor_a**': Chlorophyll concentration (mg m^-3) using the OCI Algorithm
-'**chl_ocx**': Chlorophyll concentration (mg m^-3) using the OC4 Algorithm
-'**Kd_490**': Diffuse attenuation coefficient at 490 nm (m^-1) using the KD2 algorithm
-'**pic**': Calcite concentration (mol m^-3) by Balch and Gordon
-'**poc**': Particulate organic carbon (mg m^-3) by D. Stramski, 2007
-'**longitude**': Geographical longitude
-'**latitude**': Geographical latitude
+- '**aot_868**': Aerosol optical thickness at 868 nm
+- '**angstrom**': Aerosol Angstrom exponent (443 to 865 nm)
+- '**chlor_a**': Chlorophyll concentration (mg m^-3) using the OCI Algorithm
+- '**chl_ocx**': Chlorophyll concentration (mg m^-3) using the OC4 Algorithm
+- '**Kd_490**': Diffuse attenuation coefficient at 490 nm (m^-1) using the KD2 algorithm
+- '**pic**': Calcite concentration (mol m^-3) by Balch and Gordon
+- '**poc**': Particulate organic carbon (mg m^-3) by D. Stramski, 2007
+- '**longitude**': Geographical longitude
+- '**latitude**': Geographical latitude
 
   ## Clone the repository
 ```
@@ -67,10 +67,10 @@ sensor_wavelengths = {
     'OLI'      : [443, 482, 561, 655],  
     'MSI'      : [443, 490, 560, 665, 705],
     'VIIRS'    : [412, 445, 488, 555, 672], 
-	'SGLI'     : [380, 412, 443, 490, 530, 565, 674],
-	'MODIS'    : [412, 443, 488, 531, 551, 667, 678],	
-	'GOCI2'    : [380, 412, 443, 490, 510, 555, 620, 660, 680, 709],
-	'MERIS'    : [412, 443, 490, 510, 560, 620, 665, 681, 709],
+    'SGLI'     : [380, 412, 443, 490, 530, 565, 674],
+    'MODIS'    : [412, 443, 488, 531, 551, 667, 678],	
+    'GOCI2'    : [380, 412, 443, 490, 510, 555, 620, 660, 680, 709],
+    'MERIS'    : [412, 443, 490, 510, 560, 620, 665, 681, 709],
 }
 
 ```
@@ -82,3 +82,4 @@ python SMTH_Rrs_BandShift.py
 
 3. The output file name will include the Out_Snsr_n. For instance, if the (Out_Snsr_n = "OLCI"), the output file will be (Result_HICOMatchup_Resample**OLCI**.cs
 
+For inquiries, please contact: eng.salemsalem@gmail.com  or salem.ibrahim@kuas.ac.jp
