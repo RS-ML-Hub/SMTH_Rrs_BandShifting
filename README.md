@@ -1,7 +1,11 @@
 # Unique HICO Rrs Dataset
-- This script is designed to download in situ data related to Harmful Algal Blooms (HABs) from the Akashiwo "red tide" network, managed by the Fisheries Agency of Japan.  
-- The script automates the process of finding and retrieving available HABs data within a specified date range and collects Ancillary Data from each station.
-  
+- This script is designed to 
+
+  ## Clone the repository
+```
+git clone https://github.com/RS-ML-Hub/SMTH_Rrs_BandShifting.git
+```
+
 ## Dependencies
 This code was developed using Windows 11 and Python 3.10. We recommend creating a new conda environment and installing the required dependencies with the following commands:
 ```
@@ -9,16 +13,32 @@ conda env create -f environment.yml
 conda activate HICO_env
 ```
 
-## Running the code
-- **Clone the repository**
+## Read HICO Dataset
 ```
-git clone https://github.com/RS-ML-Hub/SMTH_Rrs_BandShifting.git
+python Read_HICO_NetCDF_Data.py
 ```
+The script will store HICO Dataset as Dataframe
 
-## Script Workflow
-1.**Configure Dates**: Edit the **YYYYMMDD_s** and **YYYYMMDD_e** variables in **HABs_Data_Downloader.py** to set the start and end dates.
+## Run SMTH to conduct band-shifting
+
+### Script Workflow
+1.**Inp_Snsr_n**: Edit the **YYYYMMDD_s** and **YYYYMMDD_e** variables in **HABs_Data_Downloader.py** to set the start and end dates.
 - **YYYYMMDD_s**: Start date in "YYYY/MM/DD" format. (e.g., "2023/01/01")
 - **YYYYMMDD_e**: End date in "YYYY/MM/DD" format.   (e.g., "2023/09/30")
+```
+sensor_labels = {
+	'AERNT'    :'AERONET-OC',
+	'AERNT_JP' :'AERONET-OC_JP',
+	'OLCI'     :'Sentinel-3',
+	'OLI'      :'Landsat-8',
+	'MSI'      :'Sentinel-2', 
+	'VIIRS'    : 'SNPP', 
+	'SGLI'     : 'GCOM-C',
+	'MODIS'    : 'Aqua',
+	'GOCI2'    : 'Geo-Kompsat-2B',
+	'MERIS'    : 'Envisat',
+}
+```
 
 3. **Run the script**
 ```
