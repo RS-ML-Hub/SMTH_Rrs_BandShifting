@@ -76,7 +76,7 @@ sensor_wavelengths = {
 
 ```
 
-2. **Run the script**
+2. Run the script
 ```
 python SMTH_Rrs_BandShift.py
 ```
